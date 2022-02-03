@@ -7,6 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * 未编写完成
+ */
 public class JdbcTestInsert {
     public static void main(String[] args) {
         Connection conn = null;
