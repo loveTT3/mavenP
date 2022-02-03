@@ -5,7 +5,7 @@ import java.sql.*;
 import java.util.Properties;
 
 // 利用反射 读取配置文件
-public class JdbcUtils {
+public class JdbcUtils{
 
     private static String driver = null;
     private static String url = null;
@@ -18,7 +18,8 @@ public class JdbcUtils {
 
     static{
         try {
-            InputStream inn = JdbcUtils.class.getClassLoader().getResourceAsStream("/db.properties");
+            InputStream inn = JdbcUtils.class.getClassLoader().getResourceAsStream("jdbc.properties");
+//            FileInputStream in = new FileInputStream(JdbcUtils.class.getResource("/").getPath()+"db.properties");
             System.out.println(inn);
             Properties properties = new Properties();
             properties.load(inn);
